@@ -63,13 +63,19 @@ class Eye:
 def main():
     win = GraphWin( 'All Eyes On You', 400, 400 )
     
-    leftEye = Eye( 125, 200, win )
-    rightEye = Eye( 275, 200, win )
+    eyeOne = Eye( 100, 100, win )
+    eyeTwo = Eye( 300, 100, win )
+    eyeThree = Eye( 100, 300, win )
+    eyeFour = Eye( 300, 300, win )
+    eyeFive = Eye( 200, 200, win )
+    
     
     while True:
         clickPoint = win.getMouse()
-        leftEye.lookAtMouse( clickPoint.getX() )
-        rightEye.lookAtMouse( clickPoint.getX() )
-
+        eyeOne.lookAtMouse( clickPoint.getX() )
+        eyeTwo.lookAtMouse( clickPoint.getX() )
+        eyeThree.lookAtMouse( clickPoint.getX() )
+        eyeFour.lookAtMouse( clickPoint.getX() )
+        eyeFive.lookAtMouse( clickPoint.getX() )
     
 main()
